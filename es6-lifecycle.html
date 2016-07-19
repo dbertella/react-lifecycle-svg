@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>React lifecycle - ES6</title>
+  <link rel="icon"
+      type="image/png"
+      href="favicon.png">
+</head>
+<body style="text-align: center;">
+	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 width="792px" height="612px" viewBox="0 0 792 612" enable-background="new 0 0 792 612" xml:space="preserve">
+	<g>
+		<defs>
+			<rect id="SVGID_1_" x="60" y="18" width="672" height="576"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		<g clip-path="url(#SVGID_2_)">
+			<defs>
+				<rect id="SVGID_3_" x="59" y="18" width="672.641" height="576"/>
+			</defs>
+			<clipPath id="SVGID_4_">
+				<use xlink:href="#SVGID_3_"  overflow="visible"/>
+			</clipPath>
+			<g clip-path="url(#SVGID_4_)">
+				<defs>
+					<rect id="SVGID_5_" x="40" y="18" width="712" height="576"/>
+				</defs>
+				<clipPath id="SVGID_6_">
+					<use xlink:href="#SVGID_5_"  overflow="visible"/>
+				</clipPath>
+				<rect x="95.789" y="43.808" clip-path="url(#SVGID_6_)" fill="#FFFFFF" width="948.835" height="804.972"/>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 137.855 146.4883)"><tspan x="0" y="0" fill="#0F7338" font-family="'ProximaNova-Regular'" font-size="8.7855">set</tspan><tspan x="11.614" y="0" fill="#0F7338" font-family="'ProximaNova-Regular'" font-size="8.7855">S</tspan><tspan x="16.622" y="0" fill="#0F7338" font-family="'ProximaNova-Regular'" font-size="8.7855">tate</tspan></text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 147.5366 156.9209)" fill="#0F7338" font-family="'ProximaNova-Regular'" font-size="8.7855">OK</text>
+				</g>
+
+					<line clip-path="url(#SVGID_6_)" fill="none" stroke="#000000" stroke-width="0.5491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="248.163" y1="113.542" x2="248.163" y2="127.874"/>
+				<polygon clip-path="url(#SVGID_6_)" points="248.209,132.267 249.856,127.874 246.562,127.874 			"/>
+				<polygon clip-path="url(#SVGID_6_)" fill="none" stroke="#000000" stroke-width="0.5491" stroke-miterlimit="10" points="
+					248.209,132.267 249.856,127.874 246.562,127.874 			"/>
+
+					<line clip-path="url(#SVGID_6_)" fill="none" stroke="#000000" stroke-width="0.5491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="248.163" y1="162.961" x2="248.163" y2="177.292"/>
+				<polygon clip-path="url(#SVGID_6_)" points="248.209,181.685 249.856,177.292 246.562,177.292 			"/>
+				<polygon clip-path="url(#SVGID_6_)" fill="none" stroke="#000000" stroke-width="0.5491" stroke-miterlimit="10" points="
+					248.209,181.685 249.856,177.292 246.562,177.292 			"/>
+
+					<line clip-path="url(#SVGID_6_)" fill="none" stroke="#000000" stroke-width="0.5491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="248.163" y1="212.379" x2="248.163" y2="226.711"/>
+				<polygon clip-path="url(#SVGID_6_)" points="248.209,231.104 249.856,226.711 246.562,226.711 			"/>
+				<polygon clip-path="url(#SVGID_6_)" fill="none" stroke="#000000" stroke-width="0.5491" stroke-miterlimit="10" points="
+					248.209,231.104 249.856,226.711 246.562,226.711 			"/>
+				<path clip-path="url(#SVGID_6_)" fill="#FFFFFF" d="M176.599,83.892H319.82c1.213,0,2.196,0.983,2.196,2.196v25.258
+					c0,1.213-0.983,2.196-2.196,2.196H176.599c-1.213,0-2.196-0.983-2.196-2.196V86.088
+					C174.402,84.875,175.386,83.892,176.599,83.892z"/>
+
+					<path clip-path="url(#SVGID_6_)" fill="none" stroke="#313131" stroke-width="0.5491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+					M176.781,84.166H319.82c1.213-0.274,2.196,0.709,2.471,1.922v25.258c-0.274,1.213-1.258,2.196-2.471,2.472H176.599
+					c-1.213-0.275-2.196-1.259-2.014-2.472V86.088C174.402,84.875,175.386,83.892,176.781,84.166z"/>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 208.5859 102.5605)" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">constructor</text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 258.8247 102.5605)" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">(props)</text>
+				</g>
+				<path clip-path="url(#SVGID_6_)" fill="#FFFFFF" d="M176.599,133.31H319.82c1.213,0,2.196,0.983,2.196,2.196v25.259
+					c0,1.213-0.983,2.196-2.196,2.196H176.599c-1.213,0-2.196-0.983-2.196-2.196v-25.259
+					C174.402,134.293,175.386,133.31,176.599,133.31z"/>
+
+					<path clip-path="url(#SVGID_6_)" fill="none" stroke="#313131" stroke-width="0.5491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+					M176.781,133.584H319.82c1.213-0.274,2.196,0.709,2.471,1.922v25.259c-0.274,1.213-1.258,2.196-2.471,2.471H176.599
+					c-1.213-0.274-2.196-1.258-2.014-2.471v-25.259C174.402,134.293,175.386,133.31,176.781,133.584z"/>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 198.7959 151.9805)"><tspan x="0" y="0" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">componen</tspan><tspan x="46.967" y="0" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">t</tspan><tspan x="49.981" y="0" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">WillMount</tspan></text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 293.1357 151.9805)" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">()</text>
+				</g>
+				<path clip-path="url(#SVGID_6_)" fill="#FFFFFF" d="M176.599,232.146H319.82c1.213,0,2.196,0.983,2.196,2.196v25.259
+					c0,1.213-0.983,2.196-2.196,2.196H176.599c-1.213,0-2.196-0.983-2.196-2.196v-25.259
+					C174.402,233.13,175.386,232.146,176.599,232.146z"/>
+
+					<path clip-path="url(#SVGID_6_)" fill="none" stroke="#313131" stroke-width="0.5491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+					M176.781,232.421H319.82c1.213-0.274,2.196,0.709,2.471,1.922v25.259c-0.274,1.213-1.258,2.196-2.471,2.471H176.599
+					c-1.213-0.274-2.196-1.258-2.014-2.471v-25.259C174.402,233.13,175.386,232.146,176.781,232.421z"/>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 199.1865 250.8164)" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">componentDidMount</text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 292.7456 250.8164)" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">()</text>
+				</g>
+				<path clip-path="url(#SVGID_6_)" fill="#FFFFFF" d="M176.599,182.729H319.82c1.213,0,2.196,0.983,2.196,2.196v25.258
+					c0,1.214-0.983,2.196-2.196,2.196H176.599c-1.213,0-2.196-0.982-2.196-2.196v-25.258
+					C174.402,183.712,175.386,182.729,176.599,182.729z"/>
+
+					<path clip-path="url(#SVGID_6_)" fill="none" stroke="#313131" stroke-width="0.5491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+					M176.781,183.003H319.82c1.213-0.274,2.196,0.709,2.471,1.922v25.258c-0.274,1.214-1.258,2.196-2.471,2.472H176.599
+					c-1.213-0.275-2.196-1.258-2.014-2.472v-25.258C174.402,183.712,175.386,182.729,176.781,183.003z"/>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 231.3525 201.3975)" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">render</text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 260.5791 201.3975)" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">()</text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 213.9985 73.459)"><tspan x="0" y="0" font-family="'ProximaNova-Light'" font-size="13.1783">First </tspan><tspan x="27.226" y="0" font-family="'ProximaNova-Light'" font-size="13.1783">R</tspan><tspan x="34.658" y="0" font-family="'ProximaNova-Light'" font-size="13.1783">ender</tspan></text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 441.8379 197.5547)" fill="#B30000" font-family="'ProximaNova-Regular'" font-size="8.7855">NO</text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 432.626 207.9873)"><tspan x="0" y="0" fill="#B30000" font-family="'ProximaNova-Regular'" font-size="8.7855">set</tspan><tspan x="11.614" y="0" fill="#B30000" font-family="'ProximaNova-Regular'" font-size="8.7855">S</tspan><tspan x="16.622" y="0" fill="#B30000" font-family="'ProximaNova-Regular'" font-size="8.7855">tate</tspan></text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 432.626 98.7168)"><tspan x="0" y="0" fill="#0F7338" font-family="'ProximaNova-Regular'" font-size="8.7855">set</tspan><tspan x="11.614" y="0" fill="#0F7338" font-family="'ProximaNova-Regular'" font-size="8.7855">S</tspan><tspan x="16.622" y="0" fill="#0F7338" font-family="'ProximaNova-Regular'" font-size="8.7855">tate</tspan></text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 442.3066 109.1494)" fill="#0F7338" font-family="'ProximaNova-Regular'" font-size="8.7855">OK</text>
+				</g>
+
+					<line clip-path="url(#SVGID_6_)" fill="none" stroke="#000000" stroke-width="0.5491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="580.365" y1="115.189" x2="580.365" y2="129.521"/>
+				<polygon clip-path="url(#SVGID_6_)" points="580.091,133.914 581.738,129.521 578.443,129.521 			"/>
+				<polygon clip-path="url(#SVGID_6_)" fill="none" stroke="#000000" stroke-width="0.5491" stroke-miterlimit="10" points="
+					580.091,133.914 581.738,129.521 578.443,129.521 			"/>
+
+					<line clip-path="url(#SVGID_6_)" fill="none" stroke="#000000" stroke-width="0.5491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="580.365" y1="164.608" x2="580.365" y2="178.939"/>
+				<polygon clip-path="url(#SVGID_6_)" points="580.091,183.332 581.738,178.939 578.443,178.939 			"/>
+				<polygon clip-path="url(#SVGID_6_)" fill="none" stroke="#000000" stroke-width="0.5491" stroke-miterlimit="10" points="
+					580.091,183.332 581.738,178.939 578.443,178.939 			"/>
+
+					<line clip-path="url(#SVGID_6_)" fill="none" stroke="#000000" stroke-width="0.5491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="580.365" y1="214.026" x2="580.365" y2="228.358"/>
+				<polygon clip-path="url(#SVGID_6_)" points="580.091,232.751 581.738,228.358 578.443,228.358 			"/>
+				<polygon clip-path="url(#SVGID_6_)" fill="none" stroke="#000000" stroke-width="0.5491" stroke-miterlimit="10" points="
+					580.091,232.751 581.738,228.358 578.443,228.358 			"/>
+
+					<line clip-path="url(#SVGID_6_)" fill="none" stroke="#000000" stroke-width="0.5491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="580.365" y1="263.445" x2="580.365" y2="277.776"/>
+				<polygon clip-path="url(#SVGID_6_)" points="580.091,282.169 581.738,277.776 578.443,277.776 			"/>
+				<polygon clip-path="url(#SVGID_6_)" fill="none" stroke="#000000" stroke-width="0.5491" stroke-miterlimit="10" points="
+					580.091,282.169 581.738,277.776 578.443,277.776 			"/>
+				<path clip-path="url(#SVGID_6_)" fill="#FFFFFF" d="M471.416,85.539h217.349c1.214,0,2.197,0.982,2.197,2.196v25.258
+					c0,1.213-0.983,2.196-2.197,2.196H471.416c-1.213,0-2.196-0.983-2.196-2.196V87.735C469.22,86.521,470.203,85.539,471.416,85.539
+					z"/>
+
+					<path clip-path="url(#SVGID_6_)" fill="none" stroke="#313131" stroke-width="0.5491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+					M471.645,85.813h217.121c1.213-0.274,2.196,0.708,2.517,1.922v25.258c-0.32,1.213-1.304,2.196-2.517,2.471h-217.35
+					c-1.213-0.274-2.196-1.258-1.968-2.471V87.735C469.22,86.521,470.203,85.539,471.645,85.813z"/>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 493.2383 104.209)"><tspan x="0" y="0" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">componen</tspan><tspan x="46.967" y="0" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">t</tspan><tspan x="49.981" y="0" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">Will</tspan><tspan x="66.052" y="0" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">R</tspan><tspan x="71.972" y="0" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">eceiveProps</tspan></text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 619.502 104.209)" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">(nextProps)</text>
+				</g>
+				<path clip-path="url(#SVGID_6_)" fill="#FFFFFF" d="M471.416,184.376h217.349c1.214,0,2.197,0.983,2.197,2.196v25.258
+					c0,1.213-0.983,2.196-2.197,2.196H471.416c-1.213,0-2.196-0.983-2.196-2.196v-25.258
+					C469.22,185.359,470.203,184.376,471.416,184.376z"/>
+
+					<path clip-path="url(#SVGID_6_)" fill="none" stroke="#313131" stroke-width="0.5491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+					M471.645,184.65h217.121c1.213-0.274,2.196,0.709,2.517,1.922v25.258c-0.32,1.213-1.304,2.196-2.517,2.471h-217.35
+					c-1.213-0.274-2.196-1.258-1.968-2.471v-25.258C469.22,185.359,470.203,184.376,471.645,184.65z"/>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 484.6445 203.0459)"><tspan x="0" y="0" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">componen</tspan><tspan x="46.967" y="0" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">t</tspan><tspan x="49.981" y="0" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">WillUpdate</tspan></text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 583.2344 203.0459)"><tspan x="0" y="0" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">(nextProps, next</tspan><tspan x="68.314" y="0" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">S</tspan><tspan x="73.879" y="0" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">tate)</tspan></text>
+				</g>
+				<path clip-path="url(#SVGID_6_)" fill="#FFFFFF" d="M471.416,233.794h217.349c1.214,0,2.197,0.983,2.197,2.196v25.259
+					c0,1.213-0.983,2.196-2.197,2.196H471.416c-1.213,0-2.196-0.983-2.196-2.196V235.99
+					C469.22,234.777,470.203,233.794,471.416,233.794z"/>
+
+					<path clip-path="url(#SVGID_6_)" fill="none" stroke="#313131" stroke-width="0.5491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+					M471.645,234.068h217.121c1.213-0.274,2.196,0.709,2.517,1.922v25.259c-0.32,1.213-1.304,2.196-2.517,2.471h-217.35
+					c-1.213-0.274-2.196-1.258-1.968-2.471V235.99C469.22,234.777,470.203,233.794,471.645,234.068z"/>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 563.2344 252.4648)" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">render</text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 592.4609 252.4648)" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">()</text>
+				</g>
+				<path clip-path="url(#SVGID_6_)" fill="#FFFFFF" d="M471.416,283.213h217.349c1.214,0,2.197,0.983,2.197,2.196v25.258
+					c0,1.213-0.983,2.196-2.197,2.196H471.416c-1.213,0-2.196-0.983-2.196-2.196v-25.258
+					C469.22,284.196,470.203,283.213,471.416,283.213z"/>
+
+					<path clip-path="url(#SVGID_6_)" fill="none" stroke="#313131" stroke-width="0.5491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+					M471.645,283.487h217.121c1.213-0.274,2.196,0.709,2.517,1.922v25.258c-0.32,1.213-1.304,2.196-2.517,2.471h-217.35
+					c-1.213-0.274-2.196-1.258-1.968-2.471v-25.258C469.22,284.196,470.203,283.213,471.645,283.487z"/>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 484.332 301.8818)" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">componentDidUpdate</text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 582.1416 301.8818)"><tspan x="0" y="0" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">(prevProps, prev</tspan><tspan x="69.718" y="0" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">S</tspan><tspan x="75.282" y="0" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">tate)</tspan></text>
+				</g>
+				<path clip-path="url(#SVGID_6_)" fill="#FFFFFF" d="M471.416,134.957h217.349c1.214,0,2.197,0.983,2.197,2.196v25.259
+					c0,1.213-0.983,2.196-2.197,2.196H471.416c-1.213,0-2.196-0.983-2.196-2.196v-25.259
+					C469.22,135.94,470.203,134.957,471.416,134.957z"/>
+
+					<path clip-path="url(#SVGID_6_)" fill="none" stroke="#313131" stroke-width="0.5491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+					M471.645,135.231h217.121c1.213-0.274,2.196,0.709,2.517,1.922v25.259c-0.32,1.213-1.304,2.196-2.517,2.471h-217.35
+					c-1.213-0.274-2.196-1.258-1.968-2.471v-25.259C469.22,135.94,470.203,134.957,471.645,135.231z"/>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 476.8555 153.626)" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">shouldComponentUpdate</text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 591.0225 153.626)"><tspan x="0" y="0" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">(nextProps, next</tspan><tspan x="68.314" y="0" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">S</tspan><tspan x="73.879" y="0" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">tate)</tspan></text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 539.5479 73.459)" font-family="'ProximaNova-Light'" font-size="13.1783">Props Change</text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 110.7334 435.8613)" fill="#B30000" font-family="'ProximaNova-Regular'" font-size="8.7855">NO</text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 101.522 446.2939)"><tspan x="0" y="0" fill="#B30000" font-family="'ProximaNova-Regular'" font-size="8.7855">set</tspan><tspan x="11.614" y="0" fill="#B30000" font-family="'ProximaNova-Regular'" font-size="8.7855">S</tspan><tspan x="16.622" y="0" fill="#B30000" font-family="'ProximaNova-Regular'" font-size="8.7855">tate</tspan></text>
+				</g>
+
+					<line clip-path="url(#SVGID_6_)" fill="none" stroke="#000000" stroke-width="0.5491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="249.261" y1="402.915" x2="249.261" y2="417.246"/>
+				<polygon clip-path="url(#SVGID_6_)" points="249.016,421.639 250.663,417.246 247.369,417.246 			"/>
+				<polygon clip-path="url(#SVGID_6_)" fill="none" stroke="#000000" stroke-width="0.5491" stroke-miterlimit="10" points="
+					249.016,421.639 250.663,417.246 247.369,417.246 			"/>
+
+					<line clip-path="url(#SVGID_6_)" fill="none" stroke="#000000" stroke-width="0.5491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="249.261" y1="452.334" x2="249.261" y2="466.665"/>
+				<polygon clip-path="url(#SVGID_6_)" points="249.016,471.058 250.663,466.665 247.369,466.665 			"/>
+				<polygon clip-path="url(#SVGID_6_)" fill="none" stroke="#000000" stroke-width="0.5491" stroke-miterlimit="10" points="
+					249.016,471.058 250.663,466.665 247.369,466.665 			"/>
+
+					<line clip-path="url(#SVGID_6_)" fill="none" stroke="#000000" stroke-width="0.5491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="249.261" y1="501.752" x2="249.261" y2="516.084"/>
+				<polygon clip-path="url(#SVGID_6_)" points="249.016,520.477 250.663,516.084 247.369,516.084 			"/>
+				<polygon clip-path="url(#SVGID_6_)" fill="none" stroke="#000000" stroke-width="0.5491" stroke-miterlimit="10" points="
+					249.016,520.477 250.663,516.084 247.369,516.084 			"/>
+				<path clip-path="url(#SVGID_6_)" fill="#FFFFFF" d="M139.775,422.683h218.481c1.213,0,2.196,0.983,2.196,2.196v25.258
+					c0,1.213-0.983,2.196-2.196,2.196l-218.481,0.001c-1.213,0-2.196-0.984-2.196-2.197v-25.258
+					C137.579,423.666,138.562,422.683,139.775,422.683z"/>
+
+					<path clip-path="url(#SVGID_6_)" fill="none" stroke="#313131" stroke-width="0.5491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+					M139.991,422.957h218.265c1.213-0.274,2.196,0.709,2.471,1.922v25.258c-0.275,1.213-1.258,2.196-2.471,2.472H139.775
+					c-1.213-0.274-2.196-1.259-1.98-2.472v-25.258C137.579,423.666,138.562,422.683,139.991,422.957z"/>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 153.5693 441.3516)"><tspan x="0" y="0" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">componen</tspan><tspan x="46.967" y="0" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">t</tspan><tspan x="49.981" y="0" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">WillUpdate</tspan></text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 252.1592 441.3516)"><tspan x="0" y="0" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">(nextProps, next</tspan><tspan x="68.314" y="0" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">S</tspan><tspan x="73.879" y="0" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">tate)</tspan></text>
+				</g>
+				<path clip-path="url(#SVGID_6_)" fill="#FFFFFF" d="M139.775,472.102l218.481-0.001c1.213,0,2.196,0.983,2.196,2.196v25.259
+					c0,1.213-0.983,2.196-2.196,2.196H139.775c-1.213,0-2.196-0.983-2.196-2.196v-25.259
+					C137.579,473.084,138.562,472.102,139.775,472.102z"/>
+
+					<path clip-path="url(#SVGID_6_)" fill="none" stroke="#313131" stroke-width="0.5491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+					M139.991,472.375h218.265c1.213-0.274,2.196,0.709,2.471,1.922v25.259c-0.275,1.213-1.258,2.196-2.471,2.471l-218.481,0.001
+					c-1.213-0.275-2.196-1.259-1.98-2.472v-25.259C137.579,473.084,138.562,472.102,139.991,472.375z"/>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 232.1592 490.7715)" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">render</text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 261.3857 490.7715)" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">()</text>
+				</g>
+				<path clip-path="url(#SVGID_6_)" fill="#FFFFFF" d="M139.775,521.52h218.481c1.213,0,2.196,0.983,2.196,2.196v25.258
+					c0,1.214-0.983,2.196-2.196,2.196H139.775c-1.213,0-2.196-0.982-2.196-2.195v-25.259
+					C137.579,522.503,138.562,521.52,139.775,521.52z"/>
+
+					<path clip-path="url(#SVGID_6_)" fill="none" stroke="#313131" stroke-width="0.5491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+					M139.991,521.794h218.265c1.213-0.274,2.196,0.709,2.471,1.922v25.258c-0.275,1.213-1.258,2.196-2.471,2.472H139.775
+					c-1.213-0.275-2.196-1.258-1.98-2.471v-25.259C137.579,522.503,138.562,521.52,139.991,521.794z"/>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 153.2578 540.1895)" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">componentDidUpdate</text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 251.0669 540.1895)"><tspan x="0" y="0" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">(prevProps, prev</tspan><tspan x="69.718" y="0" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">S</tspan><tspan x="75.282" y="0" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">tate)</tspan></text>
+				</g>
+				<path clip-path="url(#SVGID_6_)" fill="#FFFFFF" d="M139.775,373.264h218.481c1.213,0,2.196,0.984,2.196,2.197v25.258
+					c0,1.213-0.983,2.196-2.196,2.196H139.775c-1.213,0-2.196-0.983-2.196-2.196v-25.258
+					C137.579,374.248,138.562,373.264,139.775,373.264z"/>
+
+					<path clip-path="url(#SVGID_6_)" fill="none" stroke="#313131" stroke-width="0.5491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+					M139.991,373.539h218.265c1.213-0.275,2.196,0.709,2.471,1.922v25.258c-0.275,1.213-1.258,2.196-2.471,2.471H139.775
+					c-1.213-0.274-2.196-1.258-1.98-2.471v-25.258C137.579,374.248,138.562,373.264,139.991,373.539z"/>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 145.7812 391.9336)" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">shouldComponentUpdate</text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 259.9478 391.9336)"><tspan x="0" y="0" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">(nextProps, next</tspan><tspan x="68.314" y="0" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">S</tspan><tspan x="73.879" y="0" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">tate)</tspan></text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 210.3511 361.1836)"><tspan x="0" y="0" font-family="'ProximaNova-Light'" font-size="13.1783">S</tspan><tspan x="7.406" y="0" font-family="'ProximaNova-Light'" font-size="13.1783">tate Change</tspan></text>
+				</g>
+				<path clip-path="url(#SVGID_6_)" fill="#FFFFFF" d="M508.48,373.264h143.221c1.213,0,2.196,0.983,2.196,2.196v25.259
+					c0,1.213-0.983,2.196-2.196,2.196H508.48c-1.213,0-2.197-0.983-2.197-2.196v-25.258
+					C506.283,374.248,507.268,373.264,508.48,373.264z"/>
+
+					<path clip-path="url(#SVGID_6_)" fill="none" stroke="#313131" stroke-width="0.5491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+					M508.434,373.539l143.268-0.001c1.213-0.274,2.196,0.709,2.242,1.922v25.259c-0.046,1.213-1.029,2.196-2.242,2.471H508.48
+					c-1.213-0.274-2.196-1.258-2.243-2.471v-25.258C506.284,374.248,507.268,373.264,508.434,373.539z"/>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 524.3164 391.9336)"><tspan x="0" y="0" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">componen</tspan><tspan x="46.967" y="0" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">t</tspan><tspan x="49.981" y="0" fill="#313131" font-family="'ProximaNova-Semibold'" font-size="9.8837">WillUnmount</tspan></text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 631.377 391.9336)" fill="#313131" font-family="'ProximaNova-Light'" font-size="9.8837">()</text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 554.123 361.1836)" font-family="'ProximaNova-Light'" font-size="13.1783">Unmount</text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 563.5684 538.541)" fill="#7E7E7E" font-family="'ProximaNova-Semibold'" font-size="9.3346">@pbesh</text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 525.4785 549.5244)"><tspan x="0" y="0" fill="#7E7E7E" font-family="'ProximaNova-Light'" font-size="9.3346">R</tspan><tspan x="5.265" y="0" fill="#7E7E7E" font-family="'ProximaNova-Light'" font-size="9.3346">eact Lifecycle Cheatsheet </tspan></text>
+				</g>
+			</g>
+		</g>
+	</g>
+	</svg>
+</body>
+</html>
